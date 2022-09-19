@@ -1,0 +1,30 @@
+use Test;
+use Git::Files;
+
+plan 3;
+
+is-deeply git-files, <
+  .github/workflows/test.yml
+  .gitignore
+  Changes
+  LICENSE
+  META6.json
+  README.md
+  dist.ini
+  lib/Git/Files.rakumod
+  run-tests
+  t/01-basic.rakutest
+  xt/paths.rakutest
+>.Slip, 'did default return ok';
+
+is-deeply git-files("t"), <
+  t/01-basic.rakutest
+>.Slip, 'did default return ok';
+
+is-deeply git-files(<lib t xt>), <
+  lib/Git/Files.rakumod
+  t/01-basic.rakutest
+  xt/paths.rakutest
+>.Slip, 'did default return ok';
+
+# vim: expandtab shiftwidth=4

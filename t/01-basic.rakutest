@@ -1,0 +1,8 @@
+use Test;
+use Git::Files;
+
+plan 1;
+
+ok &git-files, 'was git-files exported';
+
+# vim: expandtab shiftwidth=4
