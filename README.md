@@ -17,7 +17,8 @@ use Git::Files;
 
 .say for git-files :non-existing-also;  # also non-existing files
 
-.say for git-files "/path/to/dir/in/git/repo";
+.say for git-files "/path/to/git/repo";      # all files in git repo
+.say for git-files "/path/to/git/repo/dir";  # files in dir in git repo
 ```
 
 DESCRIPTION
