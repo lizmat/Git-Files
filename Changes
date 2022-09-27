@@ -2,6 +2,12 @@ Revision history for Git-Files
 
 {{$NEXT}}
 
+0.0.3  2022-09-27T20:58:19+02:00
+    - Allow specification of files as well: these were effectively
+      ignored before this
+    - Bump dependency on path-utils to fix Windows issue
+    - Fix deadlocking issue on larger repos
+
 0.0.2  2022-09-20T12:38:39+02:00
     - Bump dependency on path-utils because we can
 

@@ -1,7 +1,7 @@
 use Test;
 use Git::Files;
 
-plan 3;
+plan 6;
 
 is-deeply git-files, <
   .github/workflows/test.yml
@@ -19,12 +19,23 @@ is-deeply git-files, <
 
 is-deeply git-files("t"), <
   t/01-basic.rakutest
->.Slip, 'did default return ok';
+>.Slip, 'did "t" return ok';
 
 is-deeply git-files(<lib t xt>), <
   lib/Git/Files.rakumod
   t/01-basic.rakutest
   xt/paths.rakutest
->.Slip, 'did default return ok';
+>.Slip, 'did <lib t xt> return ok';
+
+is-deeply git-files("Changes"), <
+  Changes
+>.Slip, 'did "Changes" return ok';
+
+is-deeply git-files("lib/Git/Files.rakumod"), <
+  lib/Git/Files.rakumod
+>.Slip, 'did "lib/Git/Files.rakumod" return ok';
+
+is-deeply git-files("Foo"), <
+>.Slip, 'did "Foo" **not** return ok';
 
 # vim: expandtab shiftwidth=4

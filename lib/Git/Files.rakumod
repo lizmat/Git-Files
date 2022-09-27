@@ -1,4 +1,4 @@
-use path-utils:ver<0.0.9>:auth<zef:lizmat> <
+use path-utils:ver<0.0.10>:auth<zef:lizmat> <
   path-exists
   path-is-directory
   path-is-github-repo
@@ -10,11 +10,7 @@ my sub git-files(*@paths, :$non-existing-also) is export {
 
     # Return git files from current working directory, recursively
     my sub git-files-cwd() {
-        my $proc := run <git ls-files>, :out, :err;
-        if $proc.err.slurp -> $error {
-            die $error;
-        }
-        $proc.out.lines(:close).map({
+        run(<git ls-files>, :out).out.lines(:close).map({
              my str $path = $prefix ~ $_;
              path-exists($path)
                ?? path-is-directory($path)
@@ -25,14 +21,20 @@ my sub git-files(*@paths, :$non-existing-also) is export {
                !! $non-existing-also
                  ?? $path
                  !! Empty
-        }).Slip
+        }).Slip;
     }
 
     if @paths {
         @paths.map( -> $path {
-            temp $*CWD = $path.IO;
-            $prefix    = $path ~ $*SPEC.dir-sep;
-            git-files-cwd
+            my $io := $path.IO;
+            if $io.f {
+                $_ with git-files-cwd.first(* eq $path)
+            }
+            elsif $io.d {
+                temp $*CWD = $io;
+                $prefix    = $path ~ $*SPEC.dir-sep;
+                git-files-cwd
+            }
         }).Slip
     }
 
