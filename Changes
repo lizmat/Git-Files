@@ -2,6 +2,10 @@ Revision history for Git-Files
 
 {{$NEXT}}
 
+0.0.4  2022-10-15T21:35:44+02:00
+    - Bump dependency on path-utils to fix installation issues
+      caused by failed tests
+
 0.0.3  2022-09-27T20:58:19+02:00
     - Allow specification of files as well: these were effectively
       ignored before this
