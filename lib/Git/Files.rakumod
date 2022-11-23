@@ -1,4 +1,4 @@
-use path-utils:ver<0.0.11>:auth<zef:lizmat> <
+use path-utils:ver<0.0.13>:auth<zef:lizmat> <
   path-exists
   path-is-directory
   path-is-github-repo
