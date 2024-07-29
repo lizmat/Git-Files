@@ -6,7 +6,7 @@
   "build-depends": [
   ],
   "depends": [
-    "path-utils:ver<0.0.13>:auth<zef:lizmat>",
+    "path-utils:ver<0.0.19>:auth<zef:lizmat>",
     "git:from<bin>"
   ],
   "description": "List known files of a git repository",

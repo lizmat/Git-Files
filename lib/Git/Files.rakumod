@@ -1,4 +1,4 @@
-use path-utils:ver<0.0.13>:auth<zef:lizmat> <
+use path-utils:ver<0.0.19>:auth<zef:lizmat> <
   path-exists
   path-is-directory
   path-is-github-repo
@@ -93,7 +93,7 @@ deal to me!
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2022 Elizabeth Mattijsen
+Copyright 2022, 2024 Elizabeth Mattijsen
 
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 

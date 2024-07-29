@@ -1,6 +1,10 @@
 Revision history for Git-Files
 
 {{$NEXT}}
+    - Bump dependency on path-utils to get in sync
+    - Add CI badges for each OS
+    - Update copyright year
+    - Add sponsor button
 
 0.0.6  2022-11-23T13:03:01+01:00
     - Bump dependency on path-utils properly
