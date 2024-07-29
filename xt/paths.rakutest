@@ -4,7 +4,10 @@ use Git::Files;
 plan 6;
 
 is-deeply git-files, <
-  .github/workflows/test.yml
+  .github/FUNDING.yml
+  .github/workflows/linux.yml
+  .github/workflows/macos.yml
+  .github/workflows/windows.yml
   .gitignore
   Changes
   LICENSE

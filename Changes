@@ -1,6 +1,8 @@
 Revision history for Git-Files
 
 {{$NEXT}}
+
+0.0.7  2024-07-29T12:38:46+02:00
     - Bump dependency on path-utils to get in sync
     - Add CI badges for each OS
     - Update copyright year
