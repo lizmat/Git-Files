@@ -1,7 +1,9 @@
 Revision history for Git-Files
 
 {{$NEXT}}
-    - Bump dependency on path-utils to get in sync
+
+0.0.8  2025-01-10T11:57:59+01:00
+    - Bump dependency on path-utils to get Windows fix
     - Update copyright year
 
 0.0.7  2024-07-29T12:38:46+02:00
