@@ -1,6 +1,8 @@
 Revision history for Git-Files
 
 {{$NEXT}}
+    - Bump dependency on path-utils to get in sync
+    - Update copyright year
 
 0.0.7  2024-07-29T12:38:46+02:00
     - Bump dependency on path-utils to get in sync
