@@ -13,6 +13,7 @@ is-deeply git-files, <
   LICENSE
   META6.json
   README.md
+  bin/git-ls
   dist.ini
   doc/Git-Files.rakudoc
   lib/Git/Files.rakumod
