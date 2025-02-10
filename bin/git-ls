@@ -1,0 +1,10 @@
+use Git::Files;
+
+sub MAIN(
+  *@paths,                  #= path(s) to list, default: current dir
+  Bool :$non-existing-also  #= produce non-existing files as well
+) {
+    .say for git-files(@paths, :$non-existing-also)
+}
+
+# vim: expandtab shiftwidth=4

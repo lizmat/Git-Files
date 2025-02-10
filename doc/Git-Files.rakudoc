@@ -34,6 +34,12 @@ deleted, but not yet committed, returned paths may not actually exist.
 These will not be returned, unless the C<:non-existing-also> named
 argument is specified with a true value.
 
+=head1 SCRIPTS
+
+The C<Git::Files> distribution also installs a C<git-ls> script for
+convenience, to allow access to the same functionality from the
+command line.
+
 =head1 AUTHOR
 
 Elizabeth Mattijsen <liz@raku.rocks>

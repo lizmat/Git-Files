@@ -30,6 +30,11 @@ If no paths are specified, will assume the current directory.
 
 Since it is possible that Git still knows about files that have been deleted, but not yet committed, returned paths may not actually exist. These will not be returned, unless the `:non-existing-also` named argument is specified with a true value.
 
+SCRIPTS
+=======
+
+The `Git::Files` distribution also installs a `git-ls` script for convenience, to allow access to the same functionality from the command line.
+
 AUTHOR
 ======
 

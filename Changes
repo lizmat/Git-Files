@@ -1,6 +1,7 @@
 Revision history for Git-Files
 
 {{$NEXT}}
+    - Add "git-ls" script, for convenience
 
 0.0.8  2025-01-10T11:57:59+01:00
     - Bump dependency on path-utils to get Windows fix
