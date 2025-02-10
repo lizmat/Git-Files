@@ -6,8 +6,7 @@
   "build-depends": [
   ],
   "depends": [
-    "path-utils:ver<0.0.21+>:auth<zef:lizmat>",
-    "git:from<bin>"
+    "path-utils:ver<0.0.21+>:auth<zef:lizmat>"
   ],
   "description": "List known files of a git repository",
   "license": "Artistic-2.0",

@@ -24,7 +24,7 @@ use Git::Files;
 DESCRIPTION
 ===========
 
-The `Git::Files` distribution exports a single subroutine `git-files` that takes zero or more paths, and returns a `Slip` of paths (as strings) of all the files that are known to Git in the specified paths.
+The `Git::Files` distribution exports a single subroutine `git-files` which takes zero or more paths, and returns a `Slip` of paths (as strings) of all the files that are known to Git in the specified paths.
 
 If no paths are specified, will assume the current directory.
 

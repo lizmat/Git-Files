@@ -23,9 +23,9 @@ use Git::Files;
 
 =head1 DESCRIPTION
 
-The C<Git::Files> distribution exports a single subroutine C<git-files> that
-takes zero or more paths, and returns a C<Slip> of paths (as strings)
-of all the files that are known to Git in the specified paths.
+The C<Git::Files> distribution exports a single subroutine C<git-files>
+which takes zero or more paths, and returns a C<Slip> of paths (as
+strings) of all the files that are known to Git in the specified paths.
 
 If no paths are specified, will assume the current directory.
 
